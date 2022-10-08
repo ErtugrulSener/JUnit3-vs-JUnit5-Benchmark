@@ -1,0 +1,20 @@
+plugins {
+    id 'application'
+    id "me.champeau.jmh" version "0.6.8"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '3.8.2'
+    testImplementation group: 'org.openjdk.jmh', name: 'jmh-core', version: '1.35'
+    testImplementation 'org.openjdk.jmh:jmh-generator-annprocess:1.35'
+
+    testAnnotationProcessor 'org.openjdk.jmh:jmh-generator-annprocess:1.35'
+}
+
+application {
+    mainClass = 'junit3.benchmark.App'
+}
