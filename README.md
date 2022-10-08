@@ -32,5 +32,5 @@ AppTest.junit5_test_with_simple_assertTrue    avgt  100  1,019 � 0,165  ms/op
 JUnit3's TestRunner was faster in my benchmark, I couldn't find any other reference data to compare mine with.
 There is only one issue under the junit5 repository which also comes to this conclusion.
 
-BUT to point that out: We are talking about 1 millisecond for 100 iterations of a test.
-It's slower but still incredibly fast and doesn't really affect small projects.
+BUT to point that out: We are talking about 1 millisecond in difference for 100 iterations of a test.
+It's slower but still incredibly fast and doesn't really affect small projects test execution times.
